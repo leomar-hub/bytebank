@@ -1,3 +1,4 @@
+import { TransferenciaService } from './service/transferencia.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bytebank';
+
+  valor: number = 0;
+  destino: number = 0;
+
+  constructor (private service: TransferenciaService){}
+
 }
